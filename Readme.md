@@ -1,4 +1,4 @@
-# [set-contestmode](https://developers.reddit.com/r/vast_attention/apps/set-contestmode)
+# [set-contestmode](https://developers.reddit.com/apps/set-contestmode)
 
 a hacky annoying solution to turn on contest mode on posts
 
