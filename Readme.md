@@ -29,3 +29,7 @@ action: remove
 
 in it, where `u/Vast_Attention595` is the username of the initiator.
 then leaves a top level comment to have automoderator enable contest mode.
+
+# sourced  openess
+
+[this app is open source, view the source here](https://github.com/Qin2007/set-contestmode)
