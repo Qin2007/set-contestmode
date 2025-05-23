@@ -13,7 +13,7 @@ Devvit.addSchedulerJob({
   onRun: async (event, context) => {
     const { id, commentBody } = event.data!, text = commentBody;
     if (typeof id !== 'string' || typeof text !== 'string') return;
-    await context.reddit.submitComment({ id, text, });
+    (await context.reddit.submitComment({ id, text, })).distinguish();
   },
 });
 
@@ -31,7 +31,7 @@ Devvit.addMenuItem({
     const automoderatorAddition = '\n\n---\n# set-contestmode\ntype: comment\nauthor:\n    name: set-contestmode'
       + '\nparent_submission:\n    set_contest_mode: true\n    action_reason: u/' + username + ' turned on contest' +
       ' mode.\naction_reason: u/' + username + ' turned on contest mode.\nbody (regex, full-exact): "u/[a-z0-9\\\\-_]+' +
-      ` just enabled contest mode on your post"\nmoderators_exempt: false\naction: remove`,
+      ` just enabled contest mode on your post"\nmoderators_exempt: false\n---`,
       commentBody = `u/${username} just enabled contest mode on your post`;
     await reddit.updateWikiPage({
       subredditName: subreddit.name,

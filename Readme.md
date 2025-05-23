@@ -4,7 +4,8 @@ a hacky annoying solution to turn on contest mode on posts
 
 to use it simply select the menu option on a post and let it work.
 
-important: automoderator config must be made as a wiki page for this bot to work.
+important: automoderator config must be made as a wiki page for this bot to work,
+the automoderator config must be indented with 4 spaces.
 if you have nothing to insert then `---` is enough to get started
 
 ## internals, important maybe.
@@ -33,3 +34,7 @@ then leaves a top level comment to have automoderator enable contest mode.
 # sourced  openess
 
 [this app is open source, view the source here](https://github.com/Qin2007/set-contestmode)
+
+## changelog
+
+- 0.1.1: automoderator does not remove comments anymore. but the comment that the bot makes will be distinguished.
